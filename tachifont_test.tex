@@ -1,0 +1,92 @@
+\documentclass[a4paper]{jsarticle}
+%\usepackage{url}
+\usepackage{epsfig}
+\usepackage{epstachi-outline}
+
+\begin{document}
+%
+% タイトルと著者名
+\title{\tachi \susumu をepsで表示させるついでに\virtual も} % 和文タイトル
+\author{嵯峨 智} % 著者名 
+%
+% アブストラクト
+% タイトルの出力
+\maketitle
+%
+% 本文
+\section{はじめに}
+かつて古の時代に舘先生の字を出すためにepsをはりこんだstyファイル．ちょっと改変したやつがまだ手許にのこっていたのであげておきます．いまどきはOTFとかが正しい解だと思いますが，こんな強引な方法もあるんだよということで．
+citationテスト\cite{110003183950}．
+
+それぞれのフォントはこんな感じ．\mtachi \msusumu \gtachi \gsusumu 
+\virtual 現実\gvirtual \simplevirtual 現実\gsimplevirtual
+
+フォルダの中にはemfファイルもいれておきましたので，どうしてもPowerpointでつかいたい場合などはそちらをどうぞ．
+
+
+%%%%%%%{参考文献}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% BibTeX 標準のスタイル ( http://keizai.xrea.jp/latex/bib/bib03.html )
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{plain} % -- LaTeX 標準のスタイル
+%\bibliographystyle{abbrv} % -- plain のスタイルと同様．ただし，author, editor の first name が省略される
+%\bibliographystyle{alpha} % -- plain のスタイルと同様．ただし，ラベル名は author と year の省略形
+%\bibliographystyle{unsrt} % -- plain のスタイルと同様．ただし，文献目録の順番は引用された順
+%\bibliographystyle{apalike} % -- APA (American Psychological Association;米国心理学会)風．社会科学系の一般的な文献目録に近いスタイル．apalikeパッケージが必要
+%\bibliographystyle{ieeetr} % -- IEEE Transactions のスタイル
+%\bibliographystyle{siam} % -- SIAM のスタイル
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% jBibTeX 標準のスタイル
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{jplain} %
+%\bibliographystyle{jabbrv} %
+%\bibliographystyle{jalpha} %
+\bibliographystyle{junsrt} %
+%\bibliographystyle{jipsj} % -- 情報処理学会論文誌欧文用
+%\bibliographystyle{jname} %
+%\bibliographystyle{jorsj} % -- 日本オペレーションズ・リサーチ学会論文誌
+%\bibliographystyle{tieice} % -- 電子情報通信学会論文誌
+%\bibliographystyle{tipsj} % -- 情報処理学会論文誌
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%natbib のスタイル
+%\usepackage[option]{natbib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{plainnat} %
+%\bibliographystyle{abbrvnat} %
+%\bibliographystyle{unsrtnat} %
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%経済学論文誌のスタイル
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{aer} % -- American Economic Review harvard.sty が必要．inbook未対応
+%\bibliographystyle{aertt} % -- harvard.sty が必要．inbookが未対応
+%\bibliographystyle{cje} % -- Canadian Journal of Economics harvard.sty が必要．inbook未対応
+%\bibliographystyle{econometrica} % -- Econometrica, harvard.sty が必要
+%\bibliographystyle{ecta} % -- Econometrica natbib.sty (または chicago.sty) が必要．著者が同じ年に２本の論文を引用するとエラーが発生します．
+%\bibliographystyle{panas} % -- unsrt を改変
+%\bibliographystyle{agsm} % -- Australian Government publications harvard.sty が必要．
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%カスタマイズファイル
+%jep.bst
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%apalikeをもとに日本語の経済学論文に対応できるように改変した bst ファイルです．natbib が必要で，引用形式は，番号方式，著者名・発行年方式に対応します．文献の種類はarticle, book, inbook, incollention に対応しています．
+%\bibliographystyle{jep.bst (15, Feb., 2005 version)
+%\bibliographystyle{jep sample (PDF 形式)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% use following if all content of bibtex file should be shown
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\nocite{*}
+
+
+
+
+\bibliography{bibdatau} 
+%
+\end{document}
+
